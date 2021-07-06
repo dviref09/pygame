@@ -10,11 +10,11 @@ pygame.display.set_caption("pygame tutorial")
 ##### VAR
 #### /\
 #### /\
-WHITE = (255, 255, 255)
+BLUE_LIGHT = (46, 89, 134)
 FPS = 60
 
 def draw_window():
-    WIN.fill(WHITE)
+    WIN.fill(BLUE_LIGHT)
     pygame.display.update()
 
 def main():
