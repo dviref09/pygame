@@ -56,18 +56,18 @@ def red_handle_movement(keys_pressed, red):
         red.x -= VEL
     elif keys_pressed[pygame.K_w] and red.y - VEL > 0:  # UP
         red.y -= VEL
-    elif keys_pressed[pygame.K_s] and red.y + VEL + red.height < HEIGHT - 5:  # DOWN
+    elif keys_pressed[pygame.K_s] and red.y + VEL + red.height < HEIGHT - 10:  # DOWN
         red.y += VEL
 
 
 def yellow_handle_movement(keys_pressed, yellow):
-    if keys_pressed[pygame.K_RIGHT] and yellow.x - VEL < 900:  # RIGHT
+    if keys_pressed[pygame.K_RIGHT] and yellow.x + VEL + yellow.width < WIDTH:  # RIGHT
         yellow.x += VEL
-    elif keys_pressed[pygame.K_LEFT] and yellow.x + VEL - yellow.width > BORDER.x:  # LEFT
+    elif keys_pressed[pygame.K_LEFT] and yellow.x - VEL > BORDER.x + BORDER.width:  # LEFT
         yellow.x -= VEL
     elif keys_pressed[pygame.K_UP] and yellow.y - VEL > 0:  # UP
         yellow.y -= VEL
-    elif keys_pressed[pygame.K_DOWN] and yellow.y + VEL + yellow.height < HEIGHT - 5:  # DOWN
+    elif keys_pressed[pygame.K_DOWN] and yellow.y + VEL + yellow.height < HEIGHT - 10:  # DOWN
         yellow.y += VEL
 
 
